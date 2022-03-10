@@ -57,18 +57,3 @@ router.put('/:id', (req, res)=>{
 
 app.use('/formulario', express.static('public'))
 app.use('/api/productos', router)
-
-
-/* const products = []
-
-router.get('/',(req, res) =>{
-    res.json({mensaje: 'hola a todos!'})
-})
-
-router.post('/', (req, res)=>{
-    console.log(req.body)
-    products.push(req.body)
-    res.json({ mensaje:'se agrego el producto con exito'})
-}) */
-
-//app.use('api/productos', router)
