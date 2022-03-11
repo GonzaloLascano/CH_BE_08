@@ -23,7 +23,7 @@ function middleIdentifier (req, res, next){
             return product
         }
     })
-    if(req.idProduct.length == []){
+    if(req.idProduct.length == 0){
         res.json(error)
     }
     else {next()}
