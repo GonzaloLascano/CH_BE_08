@@ -17,7 +17,7 @@ let products = []
 
 //se definen los pedidos y endpoints de la ruta creada
 function middleIdentifier (req, res, next){
-    let error = {mensaje: 'No se pudo encontrar el producto buscado'}
+    let error = {mensaje: 'Producto no encontrado'}
     req.idProduct = products.find(product => product.id == req.params.id)
     if(req.idProduct){
         next()
